@@ -11,3 +11,10 @@ let finalPriceWithTax = discountedPrice * (1+salesTaxRate)
 let profitPerUnit = finalPriceWithTax - costPerUnit
 let breakEvenUnits = Math.ceil(fixedMonthlyCosts / profitPerUnit)
 let isProfitablePerUnit = profitPerUnit > 0
+
+console.log("Product Name: ", productName)
+console.log("Discounted Price (before tax): $", discountedPrice.toFixed(2))
+console.log("Final Price (with tax): $", finalPriceWithTax.toFixed(2))
+console.log("Profit Per Unit: $", profitPerUnit.toFixed(2))
+console.log("Break-Even Units (Monthly): ", breakEvenUnits)
+console.log("Is the product profitable per unit? ", isProfitablePerUnit)
